@@ -7,14 +7,12 @@ header {
   width: 100vw;
   max-width: 100%;
   margin-bottom: 30px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 header nav {
-  border: 1px solid black;
   width: 100vw;
   max-width: 960px;
 }
@@ -27,7 +25,6 @@ ul {
 ul li {
   list-style: none;
   padding: 30px 0;
-  border: 1px solid red;
 }
 ul li a {
   font-family: 'Playfair Display', serif;
@@ -39,7 +36,6 @@ ul li a {
   width: 100vw;
   max-width: 100%;
   height: auto;
-  border: 1px solid gold;
   margin-bottom: 105px;
   display: flex;
   justify-content: center;
@@ -49,14 +45,12 @@ ul li a {
 .container-fluid-planty .container-fluid-planty-content {
   width: 100vw;
   max-width: 960px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 .container-fluid-planty-content-image {
-  border: 1px solid black;
   width: 410px;
   height: 805px;
   position: relative;
@@ -87,7 +81,6 @@ ul li a {
   /*z-index: 1;*/
 }
 .container-fluid-planty-content-text {
-  border: 1px solid royalblue;
   width: 550px;
   height: 805px;
   padding: 160px 0px 0px 45px;
@@ -95,11 +88,9 @@ ul li a {
 }
 .container-fluid-planty-content-text .text-label {
   position: relative;
-  border: 1px solid black;
 }
 .container-fluid-planty-content-text .text-label img {
   width: 500px;
-  border: 1px solid red;
 }
 .container-fluid-planty-content-text .text-label p {
   position: absolute;
@@ -134,7 +125,6 @@ ul li a {
   width: 100vw;
   max-width: 100%;
   height: 460px;
-  border: 1px solid #DAA520;
   background: url("bg@2x.jpg");
   background-position: center center;
   background-size: cover;
@@ -147,7 +137,6 @@ ul li a {
 .container-fluid-quote .container-fluid-quote-content {
   width: 100vw;
   max-width: 960px;
-  border: 1px solid red;
   height: 460px;
   position: relative;
 }
@@ -163,7 +152,6 @@ ul li a {
   width: 100vw;
   max-width: 100%;
   height: auto;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,8 +160,6 @@ ul li a {
 .container-fluid-experts .experts-label {
   width: 100vw;
   max-width: 960px;
-  background: purple;
-  border: 1px solid black;
   font-size: 65px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -185,8 +171,6 @@ ul li a {
 .container-fluid-experts .container-fluid-experts-content {
   width: 100vw;
   max-width: 960px;
-  border: 1px solid green;
-  background: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,7 +250,6 @@ ul li a {
 .container-fluid-contact {
   width: 100vw;
   max-width: 100%;
-  border: 1px solid brown;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,7 +258,6 @@ ul li a {
 .container-fluid-contact .container-fluid-contact-content {
   width: 100vw;
   max-width: 960px;
-  border: 1px solid rebeccapurple;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,9 +266,7 @@ ul li a {
 .contact-label {
   width: 100vw;
   max-width: 960px;
-  background: orange;
   margin-bottom: 50px;
-  border: 1px solid #000000;
 }
 .contact-label p {
   font-size: 65px;
@@ -300,7 +280,6 @@ form {
   width: 505px;
   max-width: 505px;
   height: 585px;
-  border: 1px solid red;
   display: flex;
   justify-content: none;
   align-items: none;
@@ -342,7 +321,6 @@ form button {
 }
 .container-fluid-contact-conten-image {
   position: relative;
-  border: 1px solid greenyellow;
   width: 455px;
   height: 585px;
 }
@@ -376,7 +354,6 @@ footer .footer-content {
   width: 100vw;
   max-width: 960px;
   height: inherit;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -388,7 +365,6 @@ footer .footer-content p {
   color: #FFFFFF;
 }
 .img-footer {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,10 +380,22 @@ footer .footer-content p {
   nav {
     display: none;
   }
-  .container-fluid-planty-content {
+  .container-fluid-planty .container-fluid-planty-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: none;
+    align-items: none;
+    flex-direction: column;
+  }
+  .container-fluid-planty-content-text {
+    padding: 160px 0px 0px 0px;
+  }
+  .container-fluid-experts .container-fluid-experts-content {
+    flex-direction: column;
+  }
+  .container-fluid-contact .container-fluid-contact-content {
+    flex-direction: column-reverse;
+  }
+  footer .footer-content {
     flex-direction: column;
   }
 }

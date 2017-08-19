@@ -21,10 +21,10 @@ header
     width: 100vw;
     max-width: 100%;
     margin-bottom: 30px;
-    border: 1px solid red;
+    
     .set-flex-box;
     nav{
-        border: 1px solid black;
+        
         width: 100vw;
         max-width: 960px;
     }
@@ -34,7 +34,7 @@ ul{
     li{
         list-style: none;
         padding: 30px 0;
-        border: 1px solid red;
+        
         a{
             font-family: @fontPlayFair;
             font-size: 24px;
@@ -48,20 +48,20 @@ ul{
     width: 100vw;
     max-width: 100%;
     height: auto;
-    border: 1px solid gold;
+    
     margin-bottom: 105px;
     .set-flex-box;
     .container-fluid-planty-content
     {
         width: 100vw;
         max-width: 960px;
-        border: 1px solid red;
+        
         .set-flex-box;
     }
 }
 .container-fluid-planty-content-image
 {
-    border: 1px solid black;
+    
     width: 410px;
     height: 805px;
     position: relative;
@@ -96,7 +96,7 @@ ul{
 }
 .container-fluid-planty-content-text
 {
-    border: 1px solid royalblue;
+    
     width: 550px;
     height: 805px;
     padding: 160px 0px 0px 45px;
@@ -104,10 +104,10 @@ ul{
     .text-label
     {
         position: relative;
-        border: 1px solid black;
+        
         img{
             width: 500px;
-            border: 1px solid red;
+            
         }
         p{
             position: absolute;
@@ -147,7 +147,7 @@ ul{
     width: 100vw;
     max-width: 100%;
     height: 460px;
-    border: 1px solid #DAA520;
+    
     background: url("bg@2x.jpg");
     background-position: center center;
     background-size: cover;
@@ -158,7 +158,7 @@ ul{
     {
         width: 100vw;
         max-width: 960px;
-        border: 1px solid red;
+        
         height: 460px;
         position: relative;
         p
@@ -178,14 +178,14 @@ ul{
     width: 100vw;
     max-width: 100%;
     height: auto;
-    border: 1px solid red;
+    
     .set-flex-box(center,center,column);
     .experts-label
     {
         width: 100vw;
         max-width: 960px;
-        background: purple;
-        border:1px solid black;
+        
+        
         font-size: 65px;
         font-family: @fontPlayFair;
         font-style: italic;
@@ -198,8 +198,8 @@ ul{
     {
         width: 100vw;
         max-width: 960px;
-        border: 1px solid green;
-        background: aquamarine;
+        
+        
         .set-flex-box;
     }
 }
@@ -286,13 +286,13 @@ ul{
 {
     width: 100vw;
     max-width: 100%;
-    border: 1px solid brown;
+    
     .set-flex-box(center,center,column);
     .container-fluid-contact-content
     {
         width: 100vw;
         max-width: 960px;
-        border: 1px solid rebeccapurple;
+        
         .set-flex-box;
     }
 }
@@ -300,9 +300,9 @@ ul{
 {
     width: 100vw;
     max-width: 960px;
-    background: orange;
+    
     margin-bottom: 50px;
-    border: 1px solid #000000;
+    
     p{
         font-size: 65px;
         font-family: @fontPlayFair;
@@ -317,7 +317,7 @@ form
     width: 505px;
     max-width: 505px;
     height: 585px;
-    border: 1px solid red;
+    
     .set-flex-box(none, none, column);
     input{
         display: block;
@@ -357,7 +357,7 @@ form
 .container-fluid-contact-conten-image
 {
     position: relative;
-    border:1px solid greenyellow;
+    
     width: 455px;
     height: 585px;
     img{
@@ -390,7 +390,7 @@ footer
         width: 100vw;
         max-width: 960px;
         height: inherit;
-        border: 1px solid black;
+        
         .set-flex-box(space-between,center,row);
         p{
             font-family: @fontMuli;
@@ -401,7 +401,7 @@ footer
 }
 .img-footer
 {
-    border:1px solid black;
+    
     .set-flex-box;
 }
 .img-footer img{
@@ -415,8 +415,24 @@ footer
     nav{
         display: none;
     }
-    .container-fluid-planty-content
+    .container-fluid-planty .container-fluid-planty-content
     {
-        .set-flex-box(center, center, column);
+        .set-flex-box(none, none, column);
+    }
+    .container-fluid-planty-content-text
+    {
+        padding: 160px 0px 0px 0px;
+    }
+    .container-fluid-experts .container-fluid-experts-content
+    {
+        flex-direction: column;
+    }
+    .container-fluid-contact .container-fluid-contact-content
+    {
+        flex-direction: column-reverse;
+    }
+    footer .footer-content
+    {
+        flex-direction: column;
     }
 }
