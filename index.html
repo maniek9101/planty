@@ -14,14 +14,19 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">features</a></li>
-                <li><a href="#">reviews</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-nav">
+            <div class="header-nav-mobile">
+                <button class="header-nav-button">MENU</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">reviews</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="container-fluid-planty">
         <div class="container-fluid-planty-content">
@@ -107,6 +112,15 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.header-nav-button, header nav ul li a').click(function() {
+                $('header nav').toggleClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
